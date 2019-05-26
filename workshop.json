@@ -75,7 +75,7 @@
                 },
                 {
                     "name": "MOTION",
-                    "description": "Specifies whether direction is relative to world coordinates or the local coordinates of the player or players.",
+                    "description": "Specifies whether existing velocity that is counter to direction should first be cancelled out before applying the impulse.",
                     "type": "MOTION",
                     "default": "CANCEL CONTRARY MOTION"
                 }
@@ -101,7 +101,7 @@
         },
         {
             "name": "CHASE GLOBAL VARIABLE AT RATE",
-            "description": "Gradually modifies the value of a global variable at a specific rate. Global variable is a variable that belongs to the game itself.)",
+            "description": "Gradually modifies the value of a global variable at a specific rate. (A global variable is a variable that belongs to the game itself.)",
             "args": [
                 {
                     "name": "VARIABLE",
@@ -111,7 +111,7 @@
                 },
                 {
                     "name": "DESTINATION",
-                    "description": "The value that the global variable will eventually reach. The type of this value may be either a number or a vector. Though the variable's existing value must be of the same type before the chase begins.",
+                    "description": "The value that the global variable will eventually reach. The type of this value may be either a number or a vector, though the variable's existing value must be of the same type before the chase begins.",
                     "type": "ANY",
                     "default": "NUMBER"
                 },
@@ -131,7 +131,7 @@
         },
         {
             "name": "CHASE GLOBAL VARIABLE OVER TIME",
-            "description": "Gradually modifies the value of a global variable over time. (a global variable is a variable that belongs to the game itself.)",
+            "description": "Gradually modifies the value of a global variable over time. (A global variable is a variable that belongs to the game itself.)",
             "args": [
                 {
                     "name": "VARIABLE",
@@ -141,7 +141,7 @@
                 },
                 {
                     "name": "DESTINATION",
-                    "description": "The value that the global variable will eventually reach. The type of this value may be either a number or a vector. Though the variable's existing value must be of the same type before the chase begins.",
+                    "description": "The value that the global variable will eventually reach. The type of this value may be either a number or a vector, though the variable's existing value must be of the same type before the chase begins.",
                     "type": "ANY",
                     "default": "NUMBER"
                 },
@@ -161,7 +161,7 @@
         },
         {
             "name": "CHASE PLAYER VARIABLE AT RATE",
-            "description": "Gradually modifies the value of a player variable at a specific rate. (a player variable is a variable that belongs to a specific player.)",
+            "description": "Gradually modifies the value of a player variable at a specific rate. (A player variable is a variable that belongs to a specific player.)",
             "args": [
                 {
                     "name": "PLAYER",
@@ -177,7 +177,7 @@
                 },
                 {
                     "name": "DESTINATION",
-                    "description": "The value that the player variable will eventually reach. The type of this value may be either a number or a vector. Though the variable's existing value must be of the same type before the chase begins.",
+                    "description": "The value that the player variable will eventually reach. The type of this value may be either a number or a vector, though the variable's existing value must be of the same type before the chase begins.",
                     "type": "ANY",
                     "default": "NUMBER"
                 },
@@ -191,7 +191,7 @@
         },
         {
             "name": "CHASE PLAYER VARIABLE OVER TIME",
-            "description": "Gradually modifies the value of a player variable over time. (a player variable is a variable that belongs to a specific player.)",
+            "description": "Gradually modifies the value of a player variable over time. (A player variable is a variable that belongs to a specific player.)",
             "args": [
                 {
                     "name": "PLAYER",
@@ -207,7 +207,7 @@
                 },
                 {
                     "name": "DESTINATION",
-                    "description": "The value that the player variable will eventually reach. The type of this value may be either a number or a vector. Though the variable's existing value must be of the same type before the chase begins.",
+                    "description": "The value that the player variable will eventually reach. The type of this value may be either a number or a vector, though the variable's existing value must be of the same type before the chase begins.",
                     "type": "ANY",
                     "default": "NUMBER"
                 },
@@ -273,7 +273,7 @@
                 },
                 {
                     "name": "COLOR",
-                    "description": "The color of the effect to be created. If a particular team is chosen, the effect will either be red or blue. Depending on whether the team is hostile to the viewer. Does not apply to sound effects.",
+                    "description": "The color of the effect to be created. If a particular team is chosen, the effect will either be red or blue, depending on whether the team is hostile to the viewer. Does not apply to sound effects.",
                     "type": "COLOR",
                     "default": "WHITE"
                 },
@@ -299,7 +299,7 @@
         },
         {
             "name": "CREATE HUD TEXT",
-            "description": "Reates hud text visible to specific players at a specific location on screen. This text will persist until destroyed. To obtain a eference to this text, use the last text id value. This action will fail if do many text elements have been created.",
+            "description": "Creates hud text visible to specific players at a specific location on the screen. This text will persist until destroyed. To obtain a reference to this text, use the last text id value. This action will fail if too many text elements have been created.",
             "args": [
                 {
                     "name": "VISIBLE TO",
@@ -401,7 +401,7 @@
         },
         {
             "name": "CREATE IN-WORLD TEXT",
-            "description": "Creates in-world text visible to specific players at a specific position the world. This text will persist until destroyed. To obtain a eference to this text, use the last text id value. This action will fail if do many text elements have been created.",
+            "description": "Creates in-world text visible to specific players at a specific position in the world. This text will persist until destroyed. To obtain a reference to this text, use the last text id value. This action will fail if too many text elements have been created.",
             "args": [
                 {
                     "name": "VISIBLE TO",
@@ -417,13 +417,13 @@
                 },
                 {
                     "name": "POSITION",
-                    "description": "The texts position. If this value is a player, then the text will appear above the player's head. Otherwise, the value is interpreted as a position in the world.",
+                    "description": "The text's position. If this value is a player, then the text will appear above the player's head. Otherwise, the value is interpreted as a position in the world.",
                     "type": "POSITION",
                     "default": "VECTOR"
                 },
                 {
                     "name": "SCALE",
-                    "description": "The texts scale.",
+                    "description": "The text's scale.",
                     "type": "NUMBER",
                     "default": "NUMBER"
                 },
@@ -459,7 +459,7 @@
                 },
                 {
                     "name": "AMOUNT",
-                    "description": "The amount of damage to apply. This amount may be modified by buffs, debuffs. Or armor.",
+                    "description": "The amount of damage to apply. This amount may be modified by buffs, debuffs, or armor.",
                     "type": "NUMBER",
                     "default": "NUMBER"
                 }
@@ -467,7 +467,7 @@
         },
         {
             "name": "DECLARE MATCH DRAW",
-            "description": "Qstantly ends the match in a draw. This action has no effect in free- or-all modes.",
+            "description": "Instantly ends the match in a draw. This action has no effect in free-for-all modes.",
             "args": []
         },
         {
@@ -484,7 +484,7 @@
         },
         {
             "name": "DECLARE ROUND VICTORY",
-            "description": "Declare a team as the current round winner. This only works in the ontrol and elimination game modes",
+            "description": "Declare a team as the current round winner. This only works in the control and elimination game modes",
             "args": [
                 {
                     "name": "ROUND WINNING TEAM",
@@ -694,7 +694,7 @@
         },
         {
             "name": "ENABLE DEATH SPECTATE TARGET HUD",
-            "description": "'auses one or more players to see their spectate target's hud instead their own while death spectating.",
+            "description": "Causes one or more players to see their spectate target's hud instead of their own while death spectating.",
             "args": [
                 {
                     "name": "PLAYER",
@@ -727,7 +727,7 @@
                 },
                 {
                     "name": "AMOUNT",
-                    "description": "The amount of healing to apply. This amount may be modified by bufi or debuffs. Healing is capped by each player's max health.",
+                    "description": "The amount of healing to apply. This amount may be modified by buff or debuffs. Healing is capped by each player's max health.",
                     "type": "NUMBER",
                     "default": "NUMBER"
                 }
@@ -753,12 +753,12 @@
         },
         {
             "name": "LOOP",
-            "description": "Restarts the action list from the beginning. To prevent an infinite .oop, a wait action must execute between the start of the action list this action.",
+            "description": "Restarts the action list from the beginning. To prevent an infinite loop, a wait action must execute between the start of the action list and this action.",
             "args": []
         },
         {
             "name": "LOOP IF",
-            "description": "Restarts the action list from the beginning if this action's condition valuates to true. If it does not, execution continues with the next ction. To prevent an infinite loop, a wait action must execute etween the start of the action list and this action.",
+            "description": "Restarts the action list from the beginning if this action's condition evaluates to true. If it does not, execution continues with the next action. To prevent an infinite loop, a wait action must execute between the start of the action list and this action.",
             "args": [
                 {
                     "name": "CONDITION",
@@ -770,7 +770,7 @@
         },
         {
             "name": "LOOP IF CONDITION IS FALSE",
-            "description": "Restarts the action list from the beginning if at least one condition the condition list is false. If all conditions are true, execution",
+            "description": "Restarts the action list from the beginning if at least one condition in the condition list is false. If all conditions are true, execution continues with the next action. To prevent an infinite loop, a wait action must execute between the start of the action list and this action.",
             "args": []
         },
         {
@@ -796,7 +796,7 @@
                 },
                 {
                     "name": "VALUE",
-                    "description": "The value used for the modification. For arithmetic operations, this is the second of the two operands. With the other being the variable's existing value. For array operations, this is the value to",
+                    "description": "The value used for the modification. For arithmetic operations, this is the second of the two operands, with the other being the variable's existing value. For array operations, this is the value to append or remove.",
                     "type": "ANY",
                     "default": "NUMBER"
                 }
@@ -814,7 +814,7 @@
                 },
                 {
                     "name": "SCORE",
-                    "description": "The amount the score will increase or decrease. If positive, the score wu increase. If negative. The score will decrease.",
+                    "description": "The amount the score will increase or decrease. If positive, the score will increase. If negative, the score will decrease.",
                     "type": "NUMBER",
                     "default": "NUMBER"
                 }
@@ -844,7 +844,7 @@
                 },
                 {
                     "name": "VALUE",
-                    "description": "The value used for the modification. For arithmetic operations, this is the second of the two operands. With the other being the variable's existing value. For array operations, this is the value to",
+                    "description": "The value used for the modification. For arithmetic operations, this is the second of the two operands, with the other being the variable's existing value. For array operations, this is the value to append or remove.",
                     "type": "ANY",
                     "default": "NUMBER"
                 }
@@ -852,7 +852,7 @@
         },
         {
             "name": "MODIFY TEAM SCORE",
-            "description": "Modifies the score of one or both teams. This action has no effect in ree-for-all modes or modes without a team score.",
+            "description": "Modifies the score of one or both teams. This action has no effect in free-for-all modes or modes without a team score.",
             "args": [
                 {
                     "name": "TEAM",
@@ -862,7 +862,7 @@
                 },
                 {
                     "name": "SCORE",
-                    "description": "The amount the score will increase or decrease. If positive, the score wu increase. If negative. The score will decrease.",
+                    "description": "The amount the score will increase or decrease. If positive, the score will increase. If negative, the score will decrease.",
                     "type": "NUMBER",
                     "default": "NUMBER"
                 }
@@ -875,7 +875,7 @@
         },
         {
             "name": "PLAY EFFECT",
-            "description": "Plays an effect at a position in the world. The lifetime of this effect is hort, so it does not need to be updated or destroyed.",
+            "description": "Plays an effect at a position in the world. The lifetime of this effect is short, so it does not need to be updated or destroyed.",
             "args": [
                 {
                     "name": "VISIBLE TO",
@@ -891,7 +891,7 @@
                 },
                 {
                     "name": "COLOR",
-                    "description": "The color of the effect to be created. If a particular team is chosen, the effect will either be red or blue. Depending on whether the team is hostile to the viewer.",
+                    "description": "The color of the effect to be created. If a particular team is chosen, the effect will either be red or blue, depending on whether the team is hostile to the viewer.",
                     "type": "COLOR",
                     "default": "WHITE"
                 },
@@ -911,7 +911,7 @@
         },
         {
             "name": "PRELOAD HERO",
-            "description": "Reemptively loads the specified hero or heroes into memory using he skins of the specified player or players, available memory ermitting. Useful whenever rapid hero changing is possible and the 'ext hero is known.",
+            "description": "Preemptively loads the specified hero or heroes into memory using the skins of the specified player or players, available memory permitting. Useful whenever rapid hero changing is possible and the next hero is known.",
             "args": [
                 {
                     "name": "PLAYER",
@@ -921,7 +921,7 @@
                 },
                 {
                     "name": "HERO",
-                    "description": "The hero or heroes to begin preloading for the specified player or players. When multiple heroes are specified in an array. The heroes towards the beginning of the array are prioritized.",
+                    "description": "The hero or heroes to begin preloading for the specified player or players. When multiple heroes are specified in an array, the heroes towards the beginning of the array are prioritized.",
                     "type": "HERO",
                     "default": "HERO"
                 }
@@ -993,7 +993,7 @@
                 },
                 {
                     "name": "ENABLED",
-                    "description": "Specifies whether the player or players are able to use ability 1 . Expects a boolean value such as true. False. Or compare.",
+                    "description": "Specifies whether the player or players are able to use ability 1. Expects a boolean value such as true, false, or compare.",
                     "type": "BOOLEAN",
                     "default": "TRUE"
                 }
@@ -1011,7 +1011,7 @@
                 },
                 {
                     "name": "ENABLED",
-                    "description": "Specifies whether the player or players are able to use ability 2. Expects a boolean value such as true. False. Or compare.",
+                    "description": "Specifies whether the player or players are able to use ability 2. Expects a boolean value such as true, false, or compare.",
                     "type": "BOOLEAN",
                     "default": "TRUE"
                 }
@@ -1029,7 +1029,7 @@
                 },
                 {
                     "name": "TURN SPEED PERCENT",
-                    "description": "The percentage of normal aim speed to which the player or players wu set their aim speed.",
+                    "description": "The percentage of normal aim speed to which the player or players will set their aim speed.",
                     "type": "NUMBER",
                     "default": "NUMBER"
                 }
@@ -1047,7 +1047,7 @@
                 },
                 {
                     "name": "DAMAGE DEALT PERCENT",
-                    "description": "The percentage of raw damage dealt to which the player or players wu set their damage dealt.",
+                    "description": "The percentage of raw damage dealt to which the player or players will set their damage dealt.",
                     "type": "NUMBER",
                     "default": "NUMBER"
                 }
@@ -1119,13 +1119,13 @@
             "args": [
                 {
                     "name": "VARIABLE",
-                    "description": "Specifies which global variable's value is the array to modify. If the variable's value is not an array. Then its value becomes an empty array.",
+                    "description": "Specifies which global variable's value is the array to modify. If the variable's value is not an array, then its value becomes an empty array.",
                     "type": "VARIABLE",
                     "default": "A"
                 },
                 {
                     "name": "INDEX",
-                    "description": "The index of the array to modify. If the index is beyond the end of the array. The array is extended with new elements given a value of zero.",
+                    "description": "The index of the array to modify. If the index is beyond the end of the array, the array is extended with new elements given a value of zero.",
                     "type": "NUMBER",
                     "default": "NUMBER"
                 },
@@ -1149,7 +1149,7 @@
                 },
                 {
                     "name": "GRAVITY PERCENT",
-                    "description": "The percentage of regular movement gravity to which the player 0' players will set their personal movement gravity.",
+                    "description": "The percentage of regular movement gravity to which the player or players will set their personal movement gravity.",
                     "type": "NUMBER",
                     "default": "NUMBER"
                 }
@@ -1233,7 +1233,7 @@
                 },
                 {
                     "name": "HEALTH PERCENT",
-                    "description": "The percentage of raw max health to which the player or players wu set their max health.",
+                    "description": "The percentage of raw max health to which the player or players will set their max health.",
                     "type": "NUMBER",
                     "default": "NUMBER"
                 }
@@ -1251,7 +1251,7 @@
                 },
                 {
                     "name": "MOVE SPEED PERCENT",
-                    "description": "The percentage of raw move speed to which the player or players wu set their move speed.",
+                    "description": "The percentage of raw move speed to which the player or players will set their move speed.",
                     "type": "NUMBER",
                     "default": "NUMBER"
                 }
@@ -1283,7 +1283,7 @@
         },
         {
             "name": "SET PLAYER ALLOWED HEROES",
-            "description": "Iets the list of heroes available to one or more players. If a player's iirrent hero becomes unavailable, the player is forced to choose a )ifferent hero and respawn at an appropriate spawn location.",
+            "description": "Sets the list of heroes available to one or more players. If a player's current hero becomes unavailable, the player is forced to choose a different hero and respawn at an appropriate spawn location.",
             "args": [
                 {
                     "name": "PLAYER",
@@ -1293,7 +1293,7 @@
                 },
                 {
                     "name": "HERO",
-                    "description": "The hero or heroes that will be available. If no heroes are provided. The action has no effect.",
+                    "description": "The hero or heroes that will be available. If no heroes are provided, the action has no effect.",
                     "type": "HERO",
                     "default": "HERO"
                 }
@@ -1353,13 +1353,13 @@
                 },
                 {
                     "name": "VARIABLE",
-                    "description": "Specifies which player variable's value is the array to modify. If the variable's value is not an array. Then its value becomes an empty array.",
+                    "description": "Specifies which player variable's value is the array to modify. If the variable's value is not an array, then its value becomes an empty array.",
                     "type": "VARIABLE",
                     "default": "A"
                 },
                 {
                     "name": "INDEX",
-                    "description": "The index of the array to modify. If the index is beyond the end of the array. The array is extended with new elements given a value of zero.",
+                    "description": "The index of the array to modify. If the index is beyond the end of the array, the array is extended with new elements given a value of zero.",
                     "type": "NUMBER",
                     "default": "NUMBER"
                 },
@@ -1455,7 +1455,7 @@
                 },
                 {
                     "name": "ENABLED",
-                    "description": "Specifies whether the player or players are able to use secondary fire. Expects a boolean value such as true, false. Or compare.",
+                    "description": "Specifies whether the player or players are able to use secondary fire. Expects a boolean value such as true, false, or compare.",
                     "type": "BOOLEAN",
                     "default": "TRUE"
                 }
@@ -1473,7 +1473,7 @@
                 },
                 {
                     "name": "ENABLED",
-                    "description": "Specifies whether the player or players are able to use secondary fire. Expects a boolean value such as true, false. Or compare.",
+                    "description": "Specifies whether the player or players are able to use secondary fire. Expects a boolean value such as true, false, or compare.",
                     "type": "BOOLEAN",
                     "default": "TRUE"
                 }
@@ -1515,7 +1515,7 @@
                 },
                 {
                     "name": "DURATION",
-                    "description": "The duration of the status in seconds. To have a status that lasts until a clear status action is executed. Provide an arbitrarily long duration such as 9999.",
+                    "description": "The duration of the status in seconds. To have a status that lasts until a clear status action is executed, provide an arbitrarily long duration such as 9999.",
                     "type": "NUMBER",
                     "default": "NUMBER"
                 }
@@ -1551,7 +1551,7 @@
                 },
                 {
                     "name": "ENABLED",
-                    "description": "Specifies whether the player or players are able to use their ultimate ability. Expects a boolean value such as true. False, or compare.",
+                    "description": "Specifies whether the player or players are able to use their ultimate ability. Expects a boolean value such as true, false, or compare.",
                     "type": "BOOLEAN",
                     "default": "TRUE"
                 }
@@ -1559,7 +1559,7 @@
         },
         {
             "name": "SET ULTIMATE CHARGE",
-            "description": "Sets the ultimate charge for one or more players as a percentage of iaximum charge.",
+            "description": "Sets the ultimate charge for one or more players as a percentage of maximum charge.",
             "args": [
                 {
                     "name": "PLAYER",
@@ -1685,7 +1685,7 @@
         },
         {
             "name": "START DAMAGE MODIFICATION",
-            "description": "Starts modifying how much damage one or more receivers will receive from one or more damagers. A reference to this damage aodification can be obtained from the last damage modification id value. This action will fail if too many damage modifications have been started.",
+            "description": "Starts modifying how much damage one or more receivers will receive from one or more damagers. A reference to this damage modification can be obtained from the last damage modification id value. This action will fail if too many damage modifications have been started.",
             "args": [
                 {
                     "name": "RECEIVERS",
@@ -1715,7 +1715,7 @@
         },
         {
             "name": "START DAMAGE OVER TIME",
-            "description": "Starts an instance of damage over time. This dot will persist for the specified duration or until stopped by script. To obtain a reference ro this dot, use the last damage over time id value.",
+            "description": "Starts an instance of damage over time. This dot will persist for the specified duration or until stopped by script. To obtain a reference to this dot, use the last damage over time id value.",
             "args": [
                 {
                     "name": "PLAYER",
@@ -1731,7 +1731,7 @@
                 },
                 {
                     "name": "DURATION",
-                    "description": "The duration of the damage over time in seconds. To have a dot thai lasts until stopped by script, provide an arbitrarily long duration such as 9999.",
+                    "description": "The duration of the damage over time in seconds. To have a dot that lasts until stopped by script, provide an arbitrarily long duration such as 9999.",
                     "type": "NUMBER",
                     "default": "NUMBER"
                 },
@@ -1749,7 +1749,7 @@
             "args": [
                 {
                     "name": "PLAYER",
-                    "description": "The player or players who will start iurning.",
+                    "description": "The player or players who will start turning.",
                     "type": "PLAYER",
                     "default": "EVENT PLAYER"
                 },
@@ -1775,7 +1775,7 @@
         },
         {
             "name": "START FORCING PLAYER TO BE HERO",
-            "description": "Starts forcing one or more players to be a specific hero and, if necessary, respawns them immediately in their current location. This will be the only hero available to the player or players until the top forcing player to be hero action is executed.",
+            "description": "Starts forcing one or more players to be a specific hero and, if necessary, respawns them immediately in their current location. This will be the only hero available to the player or players until the stop forcing player to be hero action is executed.",
             "args": [
                 {
                     "name": "PLAYER",
@@ -1803,7 +1803,7 @@
                 },
                 {
                     "name": "ROOM",
-                    "description": "The number of the spawn room to be forced. O is the first spawn room, 1 the second. And 2 is the third. If the specified spawn room does not exist, players will use the normal spawn room.",
+                    "description": "The number of the spawn room to be forced. 0 is the first spawn room, 1 the second, and 2 is the third. If the specified spawn room does not exist, players will use the normal spawn room.",
                     "type": "NUMBER",
                     "default": "NUMBER"
                 }
@@ -1976,7 +1976,7 @@
             "args": [
                 {
                     "name": "PLAYER",
-                    "description": "The player whose variable will stop changing. If multiple players ari provided, each of their variables will stop changing.",
+                    "description": "The player whose variable will stop changing. If multiple players are provided, each of their variables will stop changing.",
                     "type": "PLAYER",
                     "default": "EVENT PLAYER"
                 },
@@ -2006,7 +2006,7 @@
             "args": [
                 {
                     "name": "DAMAGE OVER TIME ID",
-                    "description": "Specifies which damage over time instance to stop. This id may be lasi damage over time id or a variable into which last damage over time id was earlier stored.",
+                    "description": "Specifies which damage over time instance to stop. This id may be last damage over time id or a variable into which last damage over time id was earlier stored.",
                     "type": "NUMBER",
                     "default": "LAST DAMAGE OVER TIME ID"
                 }
@@ -2018,7 +2018,7 @@
             "args": [
                 {
                     "name": "PLAYER",
-                    "description": "The player or players who will stop wrning.",
+                    "description": "The player or players who will stop turning.",
                     "type": "PLAYER",
                     "default": "EVENT PLAYER"
                 }
@@ -2026,7 +2026,7 @@
         },
         {
             "name": "STOP FORCING PLAYER TO BE HERO",
-            "description": "- stops forcing one or more players to be a specific hero. This will not respawn the player or players, but it will restore their hero availability the next time they go to select a hero.",
+            "description": "Stops forcing one or more players to be a specific hero. This will not respawn the player or players, but it will restore their hero availability the next time they go to select a hero.",
             "args": [
                 {
                     "name": "PLAYER",
@@ -2115,7 +2115,7 @@
         },
         {
             "name": "WAIT",
-            "description": "Pauses the execution of the action list. Unless the wait is interrupted, he remainder of the actions will execute after the pause.",
+            "description": "Pauses the execution of the action list. Unless the wait is interrupted, the remainder of the actions will execute after the pause.",
             "args": [
                 {
                     "name": "TIME",
@@ -2125,7 +2125,7 @@
                 },
                 {
                     "name": "WAIT BEHAVIOR",
-                    "description": "Specifies if and how the wait can be interrupted. If the condition list is ignored. The wait will not be interrupted. Otherwise. The condition list will determine if and when the action list will abort or restart.",
+                    "description": "Specifies if and how the wait can be interrupted. If the condition list is ignored, the wait will not be interrupted. Otherwise, the condition list will determine if and when the action list will abort or restart.",
                     "type": "WAIT BEHAVIOR",
                     "default": "IGNORE CONDITION"
                 }
@@ -2234,7 +2234,7 @@
             "args": [
                 {
                     "name": "PLAYER",
-                    "description": "The player whose auowed heroes to acquire.",
+                    "description": "The player whose allowed heroes to acquire.",
                     "type": "PLAYER",
                     "default": "EVENT PLAYER"
                 }
@@ -2242,7 +2242,7 @@
         },
         {
             "name": "ALTITUDE OF",
-            "description": "The player's current height in meters above a surface. Results in o whenever the player is on a surface.",
+            "description": "The player's current height in meters above a surface. Results in 0 whenever the player is on a surface.",
             "args": [
                 {
                     "name": "PLAYER",
@@ -2276,13 +2276,13 @@
             "args": [
                 {
                     "name": "ANGLE",
-                    "description": "One of the two angles between which to measure the resulting anole.",
+                    "description": "One of the two angles between which to measure the resulting angle.",
                     "type": "NUMBER",
                     "default": "NUMBER"
                 },
                 {
                     "name": "ANGLE",
-                    "description": "One of the two angles between which to measure the resulting anole.",
+                    "description": "One of the two angles between which to measure the resulting angle.",
                     "type": "NUMBER",
                     "default": "NUMBER"
                 }
@@ -2300,7 +2300,7 @@
                 },
                 {
                     "name": "VALUE",
-                    "description": "The value to append to the end of the array. If this value is itself an array. Each element is appended.",
+                    "description": "The value to append to the end of the array. If this value is itself an array, each element is appended.",
                     "type": "ANY",
                     "default": "NUMBER"
                 }
@@ -2324,7 +2324,7 @@
                 },
                 {
                     "name": "COUNT",
-                    "description": "The number of elements in the resulting array. The resulting array wu contain fewer elements if the specified range exceeds the bounds of the array.",
+                    "description": "The number of elements in the resulting array. The resulting array will contain fewer elements if the specified range exceeds the bounds of the array.",
                     "type": "NUMBER",
                     "default": "NUMBER"
                 }
@@ -2437,7 +2437,7 @@
         },
         {
             "name": "CROSS PRODUCT",
-            "description": "The cross product of the specified values. (left cross up equals forward.)",
+            "description": "The cross product of the specified values. (Left cross up equals forward.)",
             "args": [
                 {
                     "name": "VALUE",
@@ -2536,13 +2536,13 @@
             "args": [
                 {
                     "name": "VALUE",
-                    "description": "One of mo vector operands of the dot product.",
+                    "description": "One of two vector operands of the dot product.",
                     "type": "POSITION",
                     "default": "VECTOR"
                 },
                 {
                     "name": "VALUE",
-                    "description": "One of mo vector operands of the dot product.",
+                    "description": "One of two vector operands of the dot product.",
                     "type": "POSITION",
                     "default": "VECTOR"
                 }
@@ -2550,7 +2550,7 @@
         },
         {
             "name": "DOWN",
-            "description": "Shorthand for the directional vector(0, -1 , 0), which points downward.",
+            "description": "Shorthand for the directional vector(0, -1, 0), which points downward.",
             "args": []
         },
         {
@@ -2652,7 +2652,7 @@
         },
         {
             "name": "FIRST OF",
-            "description": "The value at the start of the specified array. Results in o if the specified array is empty.",
+            "description": "The value at the start of the specified array. Results in 0 if the specified array is empty.",
             "args": [
                 {
                     "name": "ARRAY",
@@ -2775,7 +2775,7 @@
             "args": [
                 {
                     "name": "PLAYER",
-                    "description": "The player whose hero ro acquire.",
+                    "description": "The player whose hero to acquire.",
                     "type": "PLAYER",
                     "default": "EVENT PLAYER"
                 }
@@ -2813,7 +2813,7 @@
         },
         {
             "name": "HORIZONTAL FACING ANGLE OF",
-            "description": "The horizontal angle in degrees of a player's current facing relative to the world. This value increases as the player rotates to the left (wrapping around at +/- 1 80).",
+            "description": "The horizontal angle in degrees of a player's current facing relative to the world. This value increases as the player rotates to the left (wrapping around at +/- 180).",
             "args": [
                 {
                     "name": "PLAYER",
@@ -2895,7 +2895,7 @@
         },
         {
             "name": "IS COMMUNICATING",
-            "description": "Whether a player is using a specific communication type (such as emoting, using a voice line, etc. ).",
+            "description": "Whether a player is using a specific communication type (such as emoting, using a voice line, etc.).",
             "args": [
                 {
                     "name": "PLAYER",
@@ -2905,7 +2905,7 @@
                 },
                 {
                     "name": "TYPE",
-                    "description": "The type of communication to consider. The duration of emotes is exact. The duration of voice lines is assumed to be 4 seconds. And all other durations are assumed to be 2 seconds.",
+                    "description": "The type of communication to consider. The duration of emotes is exact, the duration of voice lines is assumed to be 4 seconds, and all other durations are assumed to be 2 seconds.",
                     "type": "COMMUNICATE",
                     "default": "VOICE LINE UP"
                 }
@@ -2913,7 +2913,7 @@
         },
         {
             "name": "IS COMMUNICATING ANY",
-            "description": "Whether a player is using any communication type (such as emoting, using a voice line, etc. ).",
+            "description": "Whether a player is using any communication type (such as emoting, using a voice line, etc.).",
             "args": [
                 {
                     "name": "PLAYER",
@@ -2937,7 +2937,7 @@
         },
         {
             "name": "IS COMMUNICATING ANY VOICE LINE",
-            "description": "Whether a player is using a voice line. (the duration of voice lines is assumed to be 4 seconds.)",
+            "description": "Whether a player is using a voice line. (The duration of voice lines is assumed to be 4 seconds.)",
             "args": [
                 {
                     "name": "PLAYER",
@@ -3070,13 +3070,13 @@
             "args": [
                 {
                     "name": "START POS",
-                    "description": "The start position for the lineof-sight check. If a player is provided, a position 2 meters above the player's feet is used.",
+                    "description": "The start position for the line-of-sight check. If a player is provided, a position 2 meters above the player's feet is used.",
                     "type": "POSITION",
                     "default": "VECTOR"
                 },
                 {
                     "name": "END POS",
-                    "description": "The end position for the line-of-sight check. If a player is provided. A position 2 meters above the player's feet is used.",
+                    "description": "The end position for the line-of-sight check. If a player is provided, a position 2 meters above the player's feet is used.",
                     "type": "POSITION",
                     "default": "VECTOR"
                 },
@@ -3111,7 +3111,7 @@
             "args": [
                 {
                     "name": "PLAYER",
-                    "description": "The player whose view to use for n-le check.",
+                    "description": "The player whose view to use for the check.",
                     "type": "PLAYER",
                     "default": "EVENT PLAYER"
                 },
@@ -3152,7 +3152,7 @@
             "args": [
                 {
                     "name": "NUMBER",
-                    "description": "The index of the objective to consider. Starting at o and counting up. Each control point. Payload checkpoint, and payload destination has its own index.",
+                    "description": "The index of the objective to consider, starting at 0 and counting up. Each control point, payload checkpoint, and payload destination has its own index.",
                     "type": "NUMBER",
                     "default": "NUMBER"
                 }
@@ -3341,7 +3341,7 @@
         },
         {
             "name": "LAST OF",
-            "description": "The value at the end of the specified array. Results in o if the specified array is empty.",
+            "description": "The value at the end of the specified array. Results in 0 if the specified array is empty.",
             "args": [
                 {
                     "name": "ARRAY",
@@ -3353,7 +3353,7 @@
         },
         {
             "name": "LAST TEXT ID",
-            "description": "A reference to the last piece of text created by the event player (or created at the global level) via the create hud text or create in- world text action.",
+            "description": "A reference to the last piece of text created by the event player (or created at the global level) via the create hud text or create in-world text action.",
             "args": []
         },
         {
@@ -3387,7 +3387,7 @@
         },
         {
             "name": "MATCH ROUND",
-            "description": "The current round of the match, counting up from 1",
+            "description": "The current round of the match, counting up from 1.",
             "args": []
         },
         {
@@ -3509,7 +3509,7 @@
             "args": [
                 {
                     "name": "VALUE",
-                    "description": "When this input is false (or equivalent to false). Then the not value is true. Otherwise. The not value is false.",
+                    "description": "When this input is false (or equivalent to false), then the not value is true. Otherwise, the not value is false.",
                     "type": "BOOLEAN",
                     "default": "TRUE"
                 }
@@ -3645,7 +3645,7 @@
             "args": [
                 {
                     "name": "NUMBER",
-                    "description": "The index of the objective to consider. Starting at 0 and counting up. Each control point. Payload checkpoint, and payload destination has its own index.",
+                    "description": "The index of the objective to consider, starting at 0 and counting up. Each control point, payload checkpoint, and payload destination has its own index.",
                     "type": "NUMBER",
                     "default": "NUMBER"
                 }
@@ -3745,7 +3745,7 @@
             "args": [
                 {
                     "name": "SLOT",
-                    "description": "The slot number from which to acquire a player or players. In team games. Each team has slots o through 5. In free-for-au games. Slots are numbered o through 1 1.",
+                    "description": "The slot number from which to acquire a player or players. In team games, each team has slots 0 through 5. In free-for-all games, slots are numbered 0 through 11.",
                     "type": "NUMBER",
                     "default": "NUMBER"
                 },
@@ -3763,7 +3763,7 @@
             "args": [
                 {
                     "name": "PLAYER",
-                    "description": "The player whose view to use for ne check.",
+                    "description": "The player whose view to use for the check.",
                     "type": "PLAYER",
                     "default": "EVENT PLAYER"
                 },
@@ -3870,13 +3870,13 @@
             "args": [
                 {
                     "name": "MIN",
-                    "description": "The smallest integer allowed. If a real number is provided to this input. It is rounded to the nearest integer.",
+                    "description": "The smallest integer allowed. If a real number is provided to this input, it is rounded to the nearest integer.",
                     "type": "NUMBER",
                     "default": "NUMBER"
                 },
                 {
                     "name": "MAX",
-                    "description": "The largest integer allowed. If a real number is provided to this input. It is rounded to the nearest integer.",
+                    "description": "The largest integer allowed. If a real number is provided to this input, it is rounded to the nearest integer.",
                     "type": "NUMBER",
                     "default": "NUMBER"
                 }
@@ -3906,7 +3906,7 @@
             "args": [
                 {
                     "name": "ARRAY",
-                    "description": "The array from which to randomly take a value. If a non-array value is provided. The result is simply the provided value.",
+                    "description": "The array from which to randomly take a value. If a non-array value is provided, the result is simply the provided value.",
                     "type": "ANY",
                     "default": "GLOBAL VARIABLE"
                 }
@@ -3936,7 +3936,7 @@
                 },
                 {
                     "name": "END POS",
-                    "description": "The end position for the ray cast. If a player is provided. A position 2 meters above the player's feet is used.",
+                    "description": "The end position for the ray cast. If a player is provided, a position 2 meters above the player's feet is used.",
                     "type": "POSITION",
                     "default": "VECTOR"
                 },
@@ -3972,7 +3972,7 @@
                 },
                 {
                     "name": "END POS",
-                    "description": "The end position for the ray cast. If a player is provided. A position 2 meters above the player's feet is used.",
+                    "description": "The end position for the ray cast. If a player is provided, a position 2 meters above the player's feet is used.",
                     "type": "POSITION",
                     "default": "VECTOR"
                 },
@@ -4008,7 +4008,7 @@
                 },
                 {
                     "name": "END POS",
-                    "description": "The end position for the ray cast. If a player is provided. A position 2 meters above the player's feet is used.",
+                    "description": "The end position for the ray cast. If a player is provided, a position 2 meters above the player's feet is used.",
                     "type": "POSITION",
                     "default": "VECTOR"
                 },
@@ -4044,7 +4044,7 @@
                 },
                 {
                     "name": "VALUE",
-                    "description": "The value to remove from the array (if found). If this value is itself an array. Each matching element is removed.",
+                    "description": "The value to remove from the array (if found). If this value is itself an array, each matching element is removed.",
                     "type": "ANY",
                     "default": "NUMBER"
                 }
@@ -4052,7 +4052,7 @@
         },
         {
             "name": "RIGHT",
-            "description": "Shorthand for the directional vector(-1 , 0, 0), which points to the right.",
+            "description": "Shorthand for the directional vector(-1, 0, 0), which points to the right.",
             "args": []
         },
         {
@@ -4075,7 +4075,7 @@
         },
         {
             "name": "SCORE OF",
-            "description": "The current score of a player. Results in o if the game mode is not free-for-all.",
+            "description": "The current score of a player. Results in 0 if the game mode is not free-for-all.",
             "args": [
                 {
                     "name": "PLAYER",
@@ -4111,7 +4111,7 @@
         },
         {
             "name": "SLOT OF",
-            "description": "The slot number of the specified player. In team games, each team has slots 0 through 5. In free-for-all games, slots are numbered 0 through 11",
+            "description": "The slot number of the specified player. In team games, each team has slots 0 through 5. In free-for-all games, slots are numbered 0 through 11.",
             "args": [
                 {
                     "name": "PLAYER",
@@ -4193,19 +4193,19 @@
                 },
                 {
                     "name": "{0}",
-                    "description": "The value that will be converted to text and used to replace",
+                    "description": "The value that will be converted to text and used to replace {0}.",
                     "type": "ANY",
                     "default": "NULL"
                 },
                 {
                     "name": "{1}",
-                    "description": "The value that will be converted to text and used to replace",
+                    "description": "The value that will be converted to text and used to replace {1}.",
                     "type": "ANY",
                     "default": "NULL"
                 },
                 {
                     "name": "{2}",
-                    "description": "The value that will be converted to text and used to replace",
+                    "description": "The value that will be converted to text and used to replace {2}.",
                     "type": "ANY",
                     "default": "NULL"
                 }
@@ -4306,7 +4306,7 @@
         },
         {
             "name": "VALUE IN ARRAY",
-            "description": "The value found at a specific element of an array. Results in o if the element does not exist.",
+            "description": "The value found at a specific element of an array. Results in 0 if the element does not exist.",
             "args": [
                 {
                     "name": "ARRAY",
@@ -4366,7 +4366,7 @@
         },
         {
             "name": "VELOCITY OF",
-            "description": "The current velocity of a player as a vector. If the player is on a surface, the y component of this velocity will be o, even when traveling up or down a slope.",
+            "description": "The current velocity of a player as a vector. If the player is on a surface, the y component of this velocity will be 0, even when traveling up or down a slope.",
             "args": [
                 {
                     "name": "PLAYER",
@@ -4570,20 +4570,59 @@
             "name": "STRING CONSTANT",
             "values": [
                 "",
+                "----------",
+                "-> {0}",
                 "!",
                 "!!",
                 "!!!",
                 "#{0}",
                 "({0})",
                 "*",
-                "----------",
-                "-> {0}",
                 "...",
-                "<- {0}",
-                "<-> {0}",
                 "?",
                 "??",
                 "???",
+                "{0} - {1}",
+                "{0} - {1} - {2}",
+                "{0} ->",
+                "{0} -> {1}",
+                "{0} != {1}",
+                "{0} * {1}",
+                "{0} / {1}",
+                "{0} : {1} : {2}",
+                "{0} {1}",
+                "{0} {1} {2}",
+                "{0} + {1}",
+                "{0} <-",
+                "{0} <- {1}",
+                "{0} <->",
+                "{0} <-> {1}",
+                "{0} < {1}",
+                "{0} <= {1}",
+                "{0} = {1}",
+                "{0} == {1}",
+                "{0} > {1}",
+                "{0} >= {1}",
+                "{0} AND {1}",
+                "{0} M",
+                "{0} M/S",
+                "{0} SEC",
+                "{0} VS {1}",
+                "{0}!",
+                "{0}!!",
+                "{0}!!!",
+                "{0}%",
+                "{0}, {1}",
+                "{0}, {1}, AND {2}",
+                "{0}:",
+                "{0}: {1}",
+                "{0}: {1} AND {2}",
+                "{0}:{1}",
+                "{0}?",
+                "{0}??",
+                "{0}???",
+                "<- {0}",
+                "<-> {0}",
                 "ABILITIES",
                 "ABILITY",
                 "ABILITY 1",
@@ -4990,7 +5029,7 @@
                 "RANK D",
                 "RANK E",
                 "RANK F",
-                "RANK G",
+                "RANK S",
                 "READY",
                 "RECORD",
                 "RECORDS",
@@ -5146,44 +5185,6 @@
                 "YOU WIN",
                 "ZONE",
                 "ZONES",
-                "{0} != {1}",
-                "{0} * {1}",
-                "{0} + {1}",
-                "{0} ,{1}, AND{2}",
-                "{0} - {1}",
-                "{0} - {1} - {2}",
-                "{0} ->",
-                "{0} -> {1}",
-                "{0} / {1}",
-                "{0} : {1} : {2}",
-                "{0} < {1}",
-                "{0} <- {1}",
-                "{0} <->",
-                "{0} <-> {1}",
-                "{0} <= {1}",
-                "{0} = {1}",
-                "{0} == {1}",
-                "{0} > {1}",
-                "{0} >= {1}",
-                "{0} AND {1}",
-                "{0} M",
-                "{0} M/S",
-                "{0} SEC",
-                "{0} VS {1}",
-                "{0} {1} {2}",
-                "{0}!",
-                "{0}!!",
-                "{0}!!!",
-                "{0}%",
-                "{0}, {1}",
-                "{0}:",
-                "{0}: {1}",
-                "{0}: {1} AND {2}",
-                "{0}:{1}",
-                "{0}:{1}",
-                "{0}?",
-                "{0}??",
-                "{0}???",
                 "\u00a1{0}!",
                 "\u00bf{0}?"
             ]
