@@ -2442,13 +2442,13 @@
                 {
                     "name": "VALUE",
                     "description": "The left-hand-side vector operand of the cross product.",
-                    "type": "POSITION",
+                    "type": "DIRECTION",
                     "default": "VECTOR"
                 },
                 {
                     "name": "VALUE",
                     "description": "The right-hand-side vector operand of the cross product.",
-                    "type": "POSITION",
+                    "type": "DIRECTION",
                     "default": "VECTOR"
                 }
             ]
@@ -2537,13 +2537,13 @@
                 {
                     "name": "VALUE",
                     "description": "One of two vector operands of the dot product.",
-                    "type": "POSITION",
+                    "type": "DIRECTION",
                     "default": "VECTOR"
                 },
                 {
                     "name": "VALUE",
                     "description": "One of two vector operands of the dot product.",
-                    "type": "POSITION",
+                    "type": "DIRECTION",
                     "default": "VECTOR"
                 }
             ]
@@ -3498,7 +3498,7 @@
                 {
                     "name": "VECTOR",
                     "description": "The vector to normalize.",
-                    "type": "POSITION",
+                    "type": "DIRECTION",
                     "default": "VECTOR"
                 }
             ]
@@ -4442,7 +4442,7 @@
                 {
                     "name": "LOCAL VECTOR",
                     "description": "The vector in local coordinates that will be converted to world coordinates.",
-                    "type": "POSITION",
+                    "type": "DIRECTION",
                     "default": "VECTOR"
                 },
                 {
@@ -4466,7 +4466,7 @@
                 {
                     "name": "VALUE",
                     "description": "The vector from which to acquire the x component.",
-                    "type": "POSITION",
+                    "type": "DIRECTION",
                     "default": "VECTOR"
                 }
             ]
@@ -4478,7 +4478,7 @@
                 {
                     "name": "VALUE",
                     "description": "The vector from which to acquire the y component.",
-                    "type": "POSITION",
+                    "type": "DIRECTION",
                     "default": "VECTOR"
                 }
             ]
@@ -4490,7 +4490,7 @@
                 {
                     "name": "VALUE",
                     "description": "The vector from which to acquire the z component.",
-                    "type": "POSITION",
+                    "type": "DIRECTION",
                     "default": "VECTOR"
                 }
             ]
@@ -5758,6 +5758,7 @@
                 "OBJECTIVE POSITION",
                 "PAYLOAD POSITION",
                 "POSITION OF",
+                "RAY CAST HIT POSITION",
                 "THROTTLE OF",
                 "VECTOR",
                 "WORLD VECTOR OF"
@@ -5787,7 +5788,6 @@
                 "PLAYERS ON HERO",
                 "PLAYERS WITHIN RADIUS",
                 "RAY CAST HIT PLAYER",
-                "RAY CAST HIT POSITION",
                 "VICTIM"
             ],
             "extends": [
