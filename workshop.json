@@ -2460,13 +2460,13 @@
                 {
                     "name": "VALUE",
                     "description": "The left-hand-side vector operand of the cross product.",
-                    "type": "DIRECTION",
+                    "type": "VECTOR",
                     "default": "VECTOR"
                 },
                 {
                     "name": "VALUE",
                     "description": "The right-hand-side vector operand of the cross product.",
-                    "type": "DIRECTION",
+                    "type": "VECTOR",
                     "default": "VECTOR"
                 }
             ]
@@ -2555,13 +2555,13 @@
                 {
                     "name": "VALUE",
                     "description": "One of two vector operands of the dot product.",
-                    "type": "DIRECTION",
+                    "type": "VECTOR",
                     "default": "VECTOR"
                 },
                 {
                     "name": "VALUE",
                     "description": "One of two vector operands of the dot product.",
-                    "type": "DIRECTION",
+                    "type": "VECTOR",
                     "default": "VECTOR"
                 }
             ]
@@ -2806,7 +2806,7 @@
                 {
                     "name": "DIRECTION",
                     "description": "The direction vector from which to acquire a horizontal angle in degrees. The vector is unitized before calculation begins.",
-                    "type": "DIRECTION",
+                    "type": "VECTOR",
                     "default": "VECTOR"
                 }
             ]
@@ -3516,7 +3516,7 @@
                 {
                     "name": "VECTOR",
                     "description": "The vector to normalize.",
-                    "type": "DIRECTION",
+                    "type": "VECTOR",
                     "default": "VECTOR"
                 }
             ]
@@ -4401,7 +4401,7 @@
                 {
                     "name": "DIRECTION",
                     "description": "The direction vector from which to acquire a vertical angle in degrees. The vector is unitized before calculation begins.",
-                    "type": "DIRECTION",
+                    "type": "VECTOR",
                     "default": "VECTOR"
                 }
             ]
@@ -4460,7 +4460,7 @@
                 {
                     "name": "LOCAL VECTOR",
                     "description": "The vector in local coordinates that will be converted to world coordinates.",
-                    "type": "DIRECTION",
+                    "type": "VECTOR",
                     "default": "VECTOR"
                 },
                 {
@@ -4484,7 +4484,7 @@
                 {
                     "name": "VALUE",
                     "description": "The vector from which to acquire the x component.",
-                    "type": "DIRECTION",
+                    "type": "VECTOR",
                     "default": "VECTOR"
                 }
             ]
@@ -4496,7 +4496,7 @@
                 {
                     "name": "VALUE",
                     "description": "The vector from which to acquire the y component.",
-                    "type": "DIRECTION",
+                    "type": "VECTOR",
                     "default": "VECTOR"
                 }
             ]
@@ -4508,7 +4508,7 @@
                 {
                     "name": "VALUE",
                     "description": "The vector from which to acquire the z component.",
-                    "type": "DIRECTION",
+                    "type": "VECTOR",
                     "default": "VECTOR"
                 }
             ]
@@ -5747,10 +5747,20 @@
             ]
         },
         {
+            "name": "VECTOR",
+            "values": [
+                "VELOCITY OF"
+            ],
+            "extends": [
+                "ANY"
+            ]
+        },
+        {
             "name": "DIRECTION",
             "values": [
                 "DIRECTION TOWARDS",
                 "FACING DIRECTION OF",
+                "RAY CAST HIT NORMAL",
                 "VECTOR TOWARDS",
                 "LEFT",
                 "RIGHT",
@@ -5760,29 +5770,38 @@
                 "DOWN"
             ],
             "extends": [
-                "ANY"
+                "VECTOR"
             ]
         },
         {
             "name": "POSITION",
             "values": [
-                "CROSS PRODUCT",
-                "DIRECTION FROM ANGLES",
                 "EYE POSITION",
                 "FLAG POSITION",
-                "LOCAL VECTOR OF",
                 "NEAREST WALKABLE POSITION",
-                "NORMALIZE",
                 "OBJECTIVE POSITION",
                 "PAYLOAD POSITION",
                 "POSITION OF",
                 "RAY CAST HIT POSITION",
+            ],
+            "extends": [
+                "VECTOR"
+            ]
+        },
+        {
+            "name": "BASE VECTOR",
+            "values": [
+                "CROSS PRODUCT",
+                "DIRECTION FROM ANGLES",
+                "LOCAL VECTOR OF",
+                "NORMALIZE",
                 "THROTTLE OF",
                 "VECTOR",
                 "WORLD VECTOR OF"
             ],
             "extends": [
-                "DIRECTION"
+                "DIRECTION",
+                "POSITION"
             ]
         },
         {
@@ -5809,7 +5828,7 @@
                 "VICTIM"
             ],
             "extends": [
-                "POSITION"
+                "BASE VECTOR"
             ]
         },
         {
@@ -5819,6 +5838,16 @@
                 "OPPOSITE TEAM OF",
                 "TEAM",
                 "TEAM OF"
+            ],
+            "extends": [
+                "ANY"
+            ]
+        },
+        {
+            "name": "STRING",
+            "values": [
+                "HERO ICON STRING",
+                "STRING"
             ],
             "extends": [
                 "ANY"
