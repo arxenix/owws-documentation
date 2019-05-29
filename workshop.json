@@ -2307,6 +2307,24 @@
             ]
         },
         {
+            "name": "ARRAY CONTAINS",
+            "description": "Whether the specified array contains the specified value.",
+            "args": [
+                {
+                    "name": "ARRAY",
+                    "description": "The array in which to search for the specified value.",
+                    "type": "ANY",
+                    "default": "ALL PLAYERS"
+                },
+                {
+                    "name": "VALUE",
+                    "description": "The value for which to search.",
+                    "type": "ANY",
+                    "default": "NUMBER"
+                }
+            ]
+        },
+        {
             "name": "ARRAY SLICE",
             "description": "A copy of the specified array containing only values from a specified index range.",
             "args": [
