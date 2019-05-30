@@ -1462,24 +1462,6 @@
             ]
         },
         {
-            "name": "SET SECONDARY FIRE ENABLED",
-            "description": "Enables or disables secondary fire for one or more players.",
-            "args": [
-                {
-                    "name": "PLAYER",
-                    "description": "The player or players whose access to secondary fire is affected.",
-                    "type": "PLAYER",
-                    "default": "EVENT PLAYER"
-                },
-                {
-                    "name": "ENABLED",
-                    "description": "Specifies whether the player or players are able to use secondary fire. Expects a boolean value such as true, false, or compare.",
-                    "type": "BOOLEAN",
-                    "default": "TRUE"
-                }
-            ]
-        },
-        {
             "name": "SET SLOW MOTION",
             "description": "Sets the simulation rate for the entire game, including all players, projectiles, effects, and game mode logic.",
             "args": [
