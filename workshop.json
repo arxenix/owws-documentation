@@ -1,4 +1,137 @@
 {
+    "events":[
+        {
+            "name":"ONGOING - GLOBAL",
+            "description":"",
+            "args":[]
+        },
+        {
+            "name":"ONGOING - EACH PLAYER",
+            "description":"",
+            "args":[
+                {
+                    "name":"TEAM",
+                    "description":"",
+                    "type":"TEAM CONSTANT",
+                    "default":"ALL"
+                },
+                {
+                    "name":"PLAYER",
+                    "description":"",
+                    "type":"EVENT PLAYER",
+                    "default":"ALL"
+                }
+            ]
+        },
+        {
+            "name":"PLAYER DEALT DAMAGE",
+            "description":"",
+            "args":[
+                {
+                    "name":"TEAM",
+                    "description":"",
+                    "type":"TEAM CONSTANT",
+                    "default":"ALL"
+                },
+                {
+                    "name":"PLAYER",
+                    "description":"",
+                    "type":"EVENT PLAYER",
+                    "default":"ALL"
+                }
+            ]
+        },
+        {
+            "name":"PLAYER DEALT FINAL BLOW",
+            "description":"",
+            "args":[
+                {
+                    "name":"TEAM",
+                    "description":"",
+                    "type":"TEAM CONSTANT",
+                    "default":"ALL"
+                },
+                {
+                    "name":"PLAYER",
+                    "description":"",
+                    "type":"EVENT PLAYER",
+                    "default":"ALL"
+                }
+            ]
+        },
+        {
+            "name":"PLAYER DIED",
+            "description":"",
+            "args":[
+                {
+                    "name":"TEAM",
+                    "description":"",
+                    "type":"TEAM CONSTANT",
+                    "default":"ALL"
+                },
+                {
+                    "name":"PLAYER",
+                    "description":"",
+                    "type":"EVENT PLAYER",
+                    "default":"ALL"
+                }
+            ]
+        },
+        {
+            "name":"PLAYER DIED",
+            "description":"",
+            "args":[
+                {
+                    "name":"TEAM",
+                    "description":"",
+                    "type":"TEAM CONSTANT",
+                    "default":"ALL"
+                },
+                {
+                    "name":"PLAYER",
+                    "description":"",
+                    "type":"EVENT PLAYER",
+                    "default":"ALL"
+                }
+            ]
+        },
+        {
+            "name":"PLAYER EARNED ELIMINATION",
+            "description":"",
+            "args":[
+                {
+                    "name":"TEAM",
+                    "description":"",
+                    "type":"TEAM CONSTANT",
+                    "default":"ALL"
+                },
+                {
+                    "name":"PLAYER",
+                    "description":"",
+                    "type":"EVENT PLAYER",
+                    "default":"ALL"
+                }
+            ]
+        },
+        {
+            "name":"PLAYER TOOK DAMAGE",
+            "description":"",
+            "args":[
+                {
+                    "name":"TEAM",
+                    "description":"",
+                    "type":"TEAM CONSTANT",
+                    "default":"ALL"
+                },
+                {
+                    "name":"PLAYER",
+                    "description":"",
+                    "type":"EVENT PLAYER",
+                    "default":"ALL"
+                }
+            ]
+        }
+    ],
     "actions": [
         {
             "name": "ABORT",
