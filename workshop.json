@@ -356,6 +356,12 @@
                     "description": "The amount of change that will happen to the variable's value each second.",
                     "type": "NUMBER",
                     "default": "NUMBER"
+                },
+                {
+                    "name": "REEVALUATION",
+                    "description": "Specifies which of this action's inputs will be continuously reevaluated. This action will keep asking for and using new values from reevaluated inputs.",
+                    "type": "CHASE RATE REEVALUATION",
+                    "default": "DESTINATION AND RATE"
                 }
             ]
         },
@@ -385,6 +391,12 @@
                     "description": "The amount of time, in seconds, over which the variable's value will approach the destination.",
                     "type": "ANY",
                     "default": "NUMBER"
+                },
+                {
+                    "name": "REEVALUATION",
+                    "description": "Specifies which of this action's inputs will be continuously reevaluated. This action will keep asking for and using new values from reevaluated inputs.",
+                    "type": "CHASE TIME REEVALUATION",
+                    "default": "DESTINATION AND DURATION"
                 }
             ]
         },
